@@ -1,22 +1,29 @@
-# GNO Senior SDR case study — review version 2
-By Adam Baig. Independent application exercise with fictional scenarios, illustrative metrics and proposed scripts.
+# Adam Baig — GNO Senior SDR case study
 
-Six sections cover call handling, seven objections, qualification and handoff, inbound follow-up, performance and coaching, and the first 30 days.
+[Open the interactive case study](https://adam-baig-sdr-case-study.streamlit.app/)
 
-## Run
-Use Python 3.12 and install requirements.txt, then:
+A practical application exercise focused on turning owner conversations into qualified discovery meetings. Built for the GNO Partners Senior SDR role.
 
+- Call opener and commercially focused follow-up questions.
+- Seven objection examples with varied closes and a clear opt-out response.
+- Qualification, inbound enquiry, AE handoff and no-show follow-up examples.
+- Adjustable performance funnel, coaching loop and first-30-days plan.
+
+Independent exercise: scenarios, metrics and scripts are illustrative.
+
+## Run locally
+Use Python 3.12 or later, install the dependencies and start the app:
+
+    python -m pip install -r requirements.txt
     python -m streamlit run streamlit_app.py
 
-Or use Start-Demo.ps1 after installing dependencies.
-
-## Verify
+## Validation
 
     python -m pytest -q
 
-13 calculation and qualification checks pass. Streamlit AppTest renders all six pages and seven objection choices without exceptions. No dialer or CRM connection is included.
+13 tests cover funnel denominators, boundary values, qualification and opt-out precedence. All six sections and seven objection states also rendered without exceptions in local Streamlit AppTest checks.
 
-## Review changes — 27 October 2026
-Direct meeting asks added to commercial objections; opt-outs still end outreach. Done-With-You positioning and company social proof checked against the official vacancy. Personal branding now leads with Adam Baig. Repeated disclaimers and the practice textbox removed. Experience, phone training and US Eastern overlap confirmed by Adam. Default model: 1,000 weekly attempts; funnel stage order explicitly encoded, table values formatted to one decimal. Results are planning assumptions to calibrate with GNO, not company targets or historical delivery.
+## Sources and contact
+[Official vacancy](https://gno-partners.breezy.hr/p/66613b6bc3a3-sales-development-representative-b2b) · [GNO Partners](https://gnopartners.com/) · [Adam Baig on LinkedIn](https://www.linkedin.com/in/adambaiguk)
 
-Sources: https://gno-partners.breezy.hr/p/66613b6bc3a3-sales-development-representative-b2b and https://gnopartners.com/ . No public deployment yet. A personal call recording has not been supplied.
+The app does not connect to a CRM, dialer or language-model service. No outreach is sent.
